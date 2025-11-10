@@ -13,7 +13,7 @@ export default function HomePage({
       <section className="space-y-8 text-center">
         <div className="space-y-4">
           <h1 className="text-4xl font-serif text-stone-800">
-            {locale === "de" ? "Willkommen bei den Dienerinnen der Göttlichen Liebe" : "Chào mừng đến với dòng Tôi Tớ Tình Yêu Thiên Chúa"}
+            {locale === "de" ? "In Gottes Liebe vereint" : "Hiệp nhất trong Tình Yêu Thiên Chúa"}
           </h1>
           <p className="text-xl text-stone-600">
             {locale === "de"
