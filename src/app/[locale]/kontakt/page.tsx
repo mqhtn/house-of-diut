@@ -63,7 +63,21 @@ export default function ContactPage({
         </section>
       </div>
 
-      <div className="mt-12 p-8 bg-stone-50 rounded-xl border border-stone-100 text-center">
+      <div className="mt-12">
+        <div className="bg-white rounded-xl shadow-sm border border-stone-100 p-8 transform transition duration-300 hover:shadow-md">
+          <h2 className="font-serif text-2xl text-stone-800 mb-6">
+            {locale === 'de' ? 'Verantwortliche Person:' : 'Phụ trách:'}
+          </h2>
+          <div className="space-y-2">
+            <p className="text-lg font-medium text-stone-700">Nt. M. Theresia Hồ Thị Thảo Mai</p>
+            <p className="text-stone-600">
+              {locale === 'de' ? '(Leiterin des Klosters)' : '(Phụ trách tu viện)'}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 p-8 bg-stone-50 rounded-xl border border-stone-100 text-center">
         <p className="text-stone-600 italic">{content.note}</p>
       </div>
 
