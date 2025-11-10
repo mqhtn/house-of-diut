@@ -8,39 +8,39 @@ export const galleryDe = {
       images: [
         {
           src: '/images/gallery/prayer-1.jpg',
-          alt: 'Gemeinsames Morgengebet in der Kapelle',
-          caption: 'Morgengebet in unserer Kapelle'
+          alt: 'Bild1',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/prayer-2.jpg',
-          alt: 'Meditation im Klostergarten',
-          caption: 'Stille Meditation im Garten'
+          alt: 'Bild2',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/prayer-3.jpg',
-          alt: 'Abendliche Vesper',
-          caption: 'Gemeinsame Vesper am Abend'
+          alt: 'Bild3',
+          caption: 'Beschreibung'
         }
       ]
     },
     {
       title: 'Gemeinschaftsleben',
-      description: 'Zusammenleben in brüderlicher Gemeinschaft',
+      description: 'Zusammenleben in Gemeinschaft',
       images: [
         {
           src: '/images/gallery/community-1.jpg',
-          alt: 'Gemeinsames Mittagessen',
-          caption: 'Tischgemeinschaft'
+          alt: 'Bild4',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/community-2.jpg',
-          alt: 'Arbeit im Klostergarten',
-          caption: 'Gemeinsame Gartenarbeit'
+          alt: 'Bild5',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/community-3.jpg',
-          alt: 'Austausch im Gemeinschaftsraum',
-          caption: 'Austausch und Gespräch'
+          alt: 'Bild6',
+          caption: 'Beschreibung'
         }
       ]
     },
@@ -50,18 +50,18 @@ export const galleryDe = {
       images: [
         {
           src: '/images/gallery/celebrations-1.jpg',
-          alt: 'Feierliche Ostermesse',
-          caption: 'Feier der Osternacht'
+          alt: 'Bild7',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/celebrations-2.jpg',
-          alt: 'Weihnachtskrippe',
-          caption: 'Unsere Weihnachtskrippe'
+          alt: 'Bild8',
+          caption: 'Beschreibung'
         },
         {
           src: '/images/gallery/celebrations-3.jpg',
-          alt: 'Patronatsfest',
-          caption: 'Feier unseres Patronatsfestes'
+          alt: 'Bild9',
+          caption: 'Beschreibung'
         }
       ]
     }
