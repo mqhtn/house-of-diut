@@ -13,7 +13,7 @@ export default function HomePage({
       <section className="space-y-8 text-center">
         <div className="space-y-4">
           <h1 className="text-4xl font-serif text-stone-800">
-            {locale === "de" ? "Willkommen in unserer Ordensgemeinschaft" : "Chào mừng đến với dòng tu của chúng tôi"}
+            {locale === "de" ? "Willkommen bei den Dienerinnen der Göttlichen Liebe" : "Chào mừng đến với dòng Tôi Tớ Tình Yêu Thiên Chúa"}
           </h1>
           <p className="text-xl text-stone-600">
             {locale === "de"
@@ -22,12 +22,12 @@ export default function HomePage({
           </p>
         </div>
         
-        <div className="relative w-full max-w-2xl mx-auto">
+        <div className="relative w-full max-w-sm mx-auto">
           <Image
             src="/images/world-locations.png"
             alt={locale === "de" ? "Unsere Standorte weltweit" : "Các địa điểm của chúng tôi trên toàn thế giới"}
-            width={800}
-            height={400}
+            width={384}
+            height={192}
             className="w-full h-auto"
             priority
           />
