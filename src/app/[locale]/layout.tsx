@@ -3,14 +3,19 @@
 import { use } from 'react';
 import Navigation from '@/components/Navigation';
 
+const isValidLocale = (locale: string): locale is "de" | "vi" => {
+  return locale === "de" || locale === "vi";
+};
+
 export default function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: "de" | "vi" }>
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = use(params);
+  const { locale: rawLocale } = use(params);
+  const locale = isValidLocale(rawLocale) ? rawLocale : "de"; // Fallback to German if invalid locale
 
   return (
     <div className="min-h-screen flex flex-col bg-stone-50">

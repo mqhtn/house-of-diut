@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export default function Navigation({ locale }: { locale: 'de' | 'vi' }) {
+type ValidLocale = 'de' | 'vi';
+
+export default function Navigation({ locale }: { locale: ValidLocale }) {
   const pathname = usePathname();
   const otherLocale = locale === 'de' ? 'vi' : 'de';
   

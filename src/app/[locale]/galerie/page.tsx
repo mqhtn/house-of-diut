@@ -46,12 +46,17 @@ function ImageModal({ image, onClose }: ImageModalProps) {
   );
 }
 
+const isValidLocale = (locale: string): locale is "de" | "vi" => {
+  return locale === "de" || locale === "vi";
+};
+
 export default function GalleryPage({
   params,
 }: {
-  params: Promise<{ locale: 'de' | 'vi' }>;
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = use(params);
+  const { locale: rawLocale } = use(params);
+  const locale = isValidLocale(rawLocale) ? rawLocale : "de";
   const content = getGalleryContent(locale);
   const [selectedImage, setSelectedImage] = useState<null | {
     src: string;
