@@ -6,6 +6,8 @@ import { eventsDe } from './events.de';
 import { eventsVi } from './events.vi';
 import { contactDe } from './contact.de';
 import { contactVi } from './contact.vi';
+import { galleryDe } from './gallery.de';
+import { galleryVi } from './gallery.vi';
 
 type Locale = 'de' | 'vi';
 
@@ -23,4 +25,8 @@ export function getEventsContent(locale: Locale) {
 
 export function getContactContent(locale: Locale) {
   return locale === 'de' ? contactDe : contactVi;
+}
+
+export function getGalleryContent(locale: Locale) {
+  return locale === 'de' ? galleryDe : galleryVi;
 }
