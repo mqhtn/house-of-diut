@@ -8,7 +8,7 @@ export const eventsDe = {
     time: '09:30 Uhr',
     locations: [
       {
-        title: 'Festgottesdienst',
+        title: 'Festliche Heilige Messe',
         place: 'Kirche St. Hedwig',
         address: 'Mackestraße 43, 53119 Bonn',
         details: 'Zelebrant: Kardinal Rainer Maria Woelki (Erzbischof von Köln)'
@@ -21,7 +21,7 @@ export const eventsDe = {
     ]
   },
   regularEvents: {
-    title: 'Regelmäßige Gottesdienste',
+    title: 'Regelmäßige Heilige Messen',
     events: [
       {
         title: 'Heilige Messe',

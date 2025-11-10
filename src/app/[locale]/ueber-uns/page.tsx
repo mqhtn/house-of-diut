@@ -100,7 +100,7 @@ export default function AboutPage({
         </p>
         <p className="text-stone-300">
           {locale === 'de'
-            ? 'Besuchen Sie uns zu einem Gottesdienst oder vereinbaren Sie ein persönliches Gespräch.'
+            ? 'Besuchen Sie uns zur Heiligen Messe oder vereinbaren Sie ein persönliches Gespräch.'
             : 'Hãy đến tham dự Thánh lễ hoặc đặt lịch hẹn để trò chuyện.'}
         </p>
       </div>

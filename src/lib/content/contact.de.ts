@@ -17,7 +17,7 @@ export const contactDe = {
     times: [
       'Montag - Freitag: 09:00 - 17:00 Uhr',
       'Samstag: Nach Vereinbarung',
-      'Sonntag: Nach den Gottesdiensten',
+      'Sonntag: Nach den Heiligen Messen',
     ],
   },
   note: 'Für Gebetsanliegen oder persönliche Gespräche vereinbaren Sie bitte einen Termin.',

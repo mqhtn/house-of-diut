@@ -50,7 +50,7 @@ export const galleryDe = {
       images: [
         {
           src: '/images/gallery/celebrations-1.jpg',
-          alt: 'Ostergottesdienst',
+          alt: 'Feierliche Ostermesse',
           caption: 'Feier der Osternacht'
         },
         {
