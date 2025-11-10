@@ -1,10 +1,10 @@
 export const aboutVi = {
   title: 'Về chúng tôi',
-  subtitle: 'Lịch sử và sứ mệnh của chúng tôi',
+  subtitle: 'Tu Viện Lòng Chúa Thương Xót – Bonn',
   content: [
     {
       title: 'Lịch sử của chúng tôi',
-      text: 'Dòng tu được thành lập vào năm [năm] và kể từ đó đã có một truyền thống lâu đời phục vụ Chúa và con người.',
+      text: 'Tu Viện Lòng Chúa Thương Xót được thành lập năm 1975 tại Bonn. Trong năm 2025 này, chúng tôi mừng Hồng Ân 50 năm thành lập. Cộng đoàn chúng tôi hiện diện tại hai nơi: Bonn (Đức) và Gò Vấp (Việt Nam).',
     },
     {
       title: 'Sứ mệnh của chúng tôi',

@@ -1,14 +1,32 @@
 export const eventsVi = {
   title: 'Sự kiện',
-  subtitle: 'Thánh lễ và các cuộc gặp gỡ',
-  upcomingEvents: 'Sự kiện sắp tới',
+  subtitle: 'Hồng Ân 50 năm Tu Viện Lòng Chúa Thương Xót',
+  upcomingEvents: 'Lễ kỷ niệm',
+  specialEvent: {
+    title: 'Hồng Ân 50 năm Thành lập Tu Viện',
+    date: '13 tháng 9 năm 2025',
+    time: '09:30',
+    locations: [
+      {
+        title: 'Thánh Lễ Tạ Ơn',
+        place: 'Nhà thờ St. Hedwig',
+        address: 'Mackestraße 43, 53119 Bonn',
+        details: 'Chủ tế: Đức Hồng Y Rainer Maria Woelki (TGM Köln)'
+      },
+      {
+        title: 'Tiệc mừng & Gặp gỡ',
+        place: 'Collegium Josephinum',
+        address: 'Kölnstraße 413, 53117 Bonn'
+      }
+    ]
+  },
   regularEvents: {
-    title: 'Các giờ thường xuyên',
+    title: 'Các Thánh Lễ thường xuyên',
     events: [
       {
         title: 'Thánh Lễ',
-        time: 'Hàng ngày lúc 07:00',
-        description: 'Thánh lễ chung trong nhà nguyện của chúng tôi',
+        time: 'Chủ nhật lúc 09:30',
+        description: 'Thánh lễ chung tại nhà thờ St. Hedwig',
       },
       {
         title: 'Kinh chiều',

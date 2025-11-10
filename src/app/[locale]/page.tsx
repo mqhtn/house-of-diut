@@ -1,4 +1,5 @@
 import { use } from 'react';
+import Image from 'next/image';
 
 export default function HomePage({
   params,
@@ -8,15 +9,45 @@ export default function HomePage({
   const { locale } = use(params);
 
   return (
-    <section className="space-y-4">
-      <h1 className="text-3xl font-bold">
-        {locale === "de" ? "Willkommen in unserer Ordensgemeinschaft" : "Chào mừng đến với dòng tu của chúng tôi"}
-      </h1>
-      <p className="text-gray-700">
-        {locale === "de"
-          ? "Hier finden Sie Informationen zu unserem Leben, Gebet und unseren Veranstaltungen."
-          : "Tại đây bạn tìm thấy thông tin về đời sống, cầu nguyện và các sự kiện của chúng tôi."}
-      </p>
-    </section>
+    <div className="max-w-6xl mx-auto">
+      <section className="space-y-8 text-center">
+        <div className="space-y-4">
+          <h1 className="text-4xl font-serif text-stone-800">
+            {locale === "de" ? "Willkommen in unserer Ordensgemeinschaft" : "Chào mừng đến với dòng tu của chúng tôi"}
+          </h1>
+          <p className="text-xl text-stone-600">
+            {locale === "de"
+              ? "Hier finden Sie Informationen zu unserem Leben, Gebet und unseren Veranstaltungen."
+              : "Tại đây bạn tìm thấy thông tin về đời sống, cầu nguyện và các sự kiện của chúng tôi."}
+          </p>
+        </div>
+        
+        <div className="relative w-full max-w-2xl mx-auto">
+          <Image
+            src="/images/world-locations.png"
+            alt={locale === "de" ? "Unsere Standorte weltweit" : "Các địa điểm của chúng tôi trên toàn thế giới"}
+            width={800}
+            height={400}
+            className="w-full h-auto"
+            priority
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto text-center">
+          <div>
+            <h2 className="font-serif text-xl text-stone-800 mb-2">
+              {locale === "de" ? "Kloster Bonn - St. Hedwig" : "Tu viện Bonn - St. Hedwig"}
+            </h2>
+            <p className="text-stone-600">TGP Köln</p>
+          </div>
+          <div>
+            <h2 className="font-serif text-xl text-stone-800 mb-2">
+              {locale === "de" ? "Kloster Gò Vấp" : "Tu viện Gò Vấp"}
+            </h2>
+            <p className="text-stone-600">TGP TP.HCM</p>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

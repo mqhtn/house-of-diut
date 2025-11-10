@@ -3,13 +3,13 @@ export const contactDe = {
   subtitle: 'Nehmen Sie mit uns Kontakt auf',
   address: {
     title: 'Adresse',
-    street: '[Straße und Hausnummer]',
-    city: '[PLZ und Stadt]',
+    street: 'Mackestraße 43',
+    city: '53119 Bonn',
     country: 'Deutschland',
   },
   contact: {
-    phone: 'Telefon: [Nummer]',
-    email: 'E-Mail: [E-Mail-Adresse]',
+    phone: 'Telefon (Sr. Caecilia): 0162 1975460',
+    email: 'E-Mail: sr.caecilia@web.de',
   },
   visiting: {
     title: 'Besuchszeiten',

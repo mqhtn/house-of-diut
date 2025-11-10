@@ -1,7 +1,19 @@
 export const homeDe = {
-  heroTitle: 'Ordensgemeinschaft XYZ',
-  heroSubtitle: 'Im Dienst an Gott und den Menschen.',
-  introText:
-    'Willkommen auf der offiziellen Seite unserer Ordensgemeinschaft. Hier finden Sie Informationen zu unserem Leben, unseren Gottesdiensten und Begegnungsmöglichkeiten.',
-  nextEventsTitle: 'Nächste Gottesdienste & Veranstaltungen',
+  heroTitle: 'Kloster der Göttlichen Barmherzigkeit – Bonn',
+  heroSubtitle: 'Per Crucem ad Lucem – Durch das Kreuz zum Licht',
+  introText: 'Willkommen auf der offiziellen Seite unseres Klosters. Wir sind eine Ordensgemeinschaft mit Standorten in Bonn (Deutschland) und Gò Vấp (Vietnam), die sich der göttlichen Barmherzigkeit widmet.',
+  jubilaeumTitle: '50 Jahre Gnade',
+  jubilaeumText: 'In diesem Jahr feiern wir das 50-jährige Gründungsjubiläum unseres Klosters. Wir laden Sie herzlich ein, diesen besonderen Moment mit uns zu teilen.',
+  standorteTitle: 'Unsere Standorte',
+  standorte: [
+    {
+      name: 'Bonn, St. Hedwig',
+      location: 'Erzdiözese Köln, Deutschland',
+      address: 'Mackestraße 43, 53119 Bonn'
+    },
+    {
+      name: 'Gò Vấp',
+      location: 'Erzdiözese Ho-Chi-Minh-Stadt, Vietnam'
+    }
+  ]
 };

@@ -1,10 +1,10 @@
 export const aboutDe = {
   title: 'Über uns',
-  subtitle: 'Unsere Geschichte und Mission',
+  subtitle: 'Kloster der Göttlichen Barmherzigkeit – Bonn',
   content: [
     {
       title: 'Unsere Geschichte',
-      text: 'Die Ordensgemeinschaft wurde im Jahre [Jahr] gegründet und hat seitdem eine lange Tradition des Dienstes an Gott und den Menschen.',
+      text: 'Das Kloster der Göttlichen Barmherzigkeit wurde 1975 in Bonn gegründet. In diesem Jahr 2025 feiern wir unser 50-jähriges Jubiläum. Unsere Gemeinschaft ist an zwei Standorten präsent: in Bonn (Deutschland) und in Gò Vấp (Vietnam).',
     },
     {
       title: 'Unsere Mission',

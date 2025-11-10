@@ -3,13 +3,13 @@ export const contactVi = {
   subtitle: 'Hãy liên hệ với chúng tôi',
   address: {
     title: 'Địa chỉ',
-    street: '[Tên đường và số nhà]',
-    city: '[Mã bưu điện và Thành phố]',
+    street: 'Mackestraße 43',
+    city: '53119 Bonn',
     country: 'Đức',
   },
   contact: {
-    phone: 'Điện thoại: [Số điện thoại]',
-    email: 'Email: [Địa chỉ email]',
+    phone: 'Điện thoại (Sơ Caecilia): 0162 1975460',
+    email: 'Email: sr.caecilia@web.de',
   },
   visiting: {
     title: 'Giờ thăm viếng',

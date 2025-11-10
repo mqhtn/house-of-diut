@@ -67,17 +67,45 @@ export default function ContactPage({
         <p className="text-stone-600 italic">{content.note}</p>
       </div>
 
-      <div className="mt-16 text-center">
-        <h2 className="font-serif text-2xl text-stone-800 mb-4">
-          {locale === 'de' ? 'Wegbeschreibung' : 'Chỉ đường'}
-        </h2>
-        <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.409222750506!2d13.372469776816714!3d52.51632723476414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg%20Gate!5e0!3m2!1sen!2sde!4v1699621436095!5m2!1sen!2sde"
-            className="w-full h-full border-0"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+      <div className="mt-16">
+        <div className="text-center mb-12">
+          <h2 className="font-serif text-2xl text-stone-800 mb-4">
+            {locale === 'de' ? 'Unsere Standorte' : 'Các địa điểm của chúng tôi'}
+          </h2>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Bonn Location */}
+          <div className="space-y-4">
+            <h3 className="font-serif text-xl text-stone-800">
+              {locale === 'de' ? 'Kloster Bonn - St. Hedwig' : 'Tu viện Bonn - St. Hedwig'}
+            </h3>
+            <div className="aspect-w-16 aspect-h-12 rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.794904861597!2d7.101450776946698!3d50.7376746713838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee1758b2ddd3b%3A0xf6d5fc85f6e80d89!2sMackestra%C3%9Fe%2043%2C%2053119%20Bonn%2C%20Germany!5e0!3m2!1sen!2s!4v1699635160000!5m2!1sde!2sde"
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p className="text-stone-600 text-sm">Mackestraße 43, 53119 Bonn</p>
+          </div>
+
+          {/* Go Vap Location */}
+          <div className="space-y-4">
+            <h3 className="font-serif text-xl text-stone-800">
+              {locale === 'de' ? 'Kloster Gò Vấp' : 'Tu viện Gò Vấp'}
+            </h3>
+            <div className="aspect-w-16 aspect-h-12 rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15673.792894169284!2d106.65999!3d10.844297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289741b0349d%3A0x41275ba26edb00b3!2sG%C3%B2%20V%E1%BA%A5p%2C%20Ho%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1699635200000!5m2!1svi!2s"
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p className="text-stone-600 text-sm">Gò Vấp, TGP TP. HCM, Việt Nam</p>
+          </div>
         </div>
       </div>
     </div>

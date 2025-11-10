@@ -1,14 +1,32 @@
 export const eventsDe = {
   title: 'Veranstaltungen',
-  subtitle: 'Gottesdienste und Begegnungen',
-  upcomingEvents: 'Kommende Veranstaltungen',
+  subtitle: '50 Jahre Kloster der Göttlichen Barmherzigkeit',
+  upcomingEvents: 'Jubiläumsfeier',
+  specialEvent: {
+    title: '50-jähriges Gründungsjubiläum',
+    date: '13. September 2025',
+    time: '09:30 Uhr',
+    locations: [
+      {
+        title: 'Festgottesdienst',
+        place: 'Kirche St. Hedwig',
+        address: 'Mackestraße 43, 53119 Bonn',
+        details: 'Zelebrant: Kardinal Rainer Maria Woelki (Erzbischof von Köln)'
+      },
+      {
+        title: 'Festessen & Begegnung',
+        place: 'Collegium Josephinum',
+        address: 'Kölnstraße 413, 53117 Bonn'
+      }
+    ]
+  },
   regularEvents: {
-    title: 'Regelmäßige Termine',
+    title: 'Regelmäßige Gottesdienste',
     events: [
       {
         title: 'Heilige Messe',
-        time: 'Täglich um 07:00 Uhr',
-        description: 'Gemeinsame Eucharistiefeier in unserer Kapelle',
+        time: 'Sonntags um 09:30 Uhr',
+        description: 'Gemeinsame Eucharistiefeier in der Kirche St. Hedwig',
       },
       {
         title: 'Vesper',
