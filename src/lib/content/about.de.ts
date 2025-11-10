@@ -8,11 +8,11 @@ export const aboutDe = {
     },
     {
       title: 'Unsere Mission',
-      text: 'Wir widmen unser Leben dem Gebet, der Kontemplation und dem Dienst an den Menschen. Unsere Gemeinschaft lebt nach den evangelischen Räten der Armut, der Keuschheit und des Gehorsams.',
+      text: 'Wir widmen unser Leben dem Gebet und dem Dienst an den Menschen.',
     },
     {
       title: 'Unser Alltag',
-      text: 'Der Tag in unserer Gemeinschaft ist geprägt von Gebet, Arbeit und gemeinschaftlichem Leben. Wir folgen einem festen Tagesablauf, der uns hilft, unsere spirituelle Berufung zu leben.',
+      text: 'Der Tag in unserer Gemeinschaft ist geprägt von gemeinschaftlichem Leben.',
     },
   ],
 };

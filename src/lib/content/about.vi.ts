@@ -8,11 +8,11 @@ export const aboutVi = {
     },
     {
       title: 'Sứ mệnh của chúng tôi',
-      text: 'Chúng tôi dâng hiến cuộc sống của mình cho việc cầu nguyện, chiêm niệm và phục vụ con người. Cộng đoàn chúng tôi sống theo các lời khuyên Phúc Âm về đức nghèo khó, đức khiết tịnh và đức vâng phục.',
+      text: 'Chúng tôi dâng hiến cuộc sống của mình cho việc cầu nguyện và phục vụ con người.',
     },
     {
       title: 'Cuộc sống hàng ngày',
-      text: 'Ngày sống trong cộng đoàn của chúng tôi được đánh dấu bởi việc cầu nguyện, làm việc và sống cộng đoàn. Chúng tôi tuân theo một lịch trình cố định, giúp chúng tôi sống ơn gọi tâm linh của mình.',
+      text: 'Ngày sống trong cộng đoàn của chúng tôi được đánh dấu bởi việc sống cộng đoàn.',
     },
   ],
 };
