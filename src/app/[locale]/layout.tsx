@@ -1,13 +1,15 @@
 import Link from "next/link";
 
+import { use } from 'react';
+
 export default function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: "de" | "vi" };
+  params: Promise<{ locale: "de" | "vi" }>;
 }) {
-  const { locale } = params;
+  const { locale } = use(params);
   const otherLocale = locale === "de" ? "vi" : "de";
 
   return (

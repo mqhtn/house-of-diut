@@ -1,9 +1,11 @@
+import { use } from 'react';
+
 export default function HomePage({
   params,
 }: {
-  params: { locale: "de" | "vi" };
+  params: Promise<{ locale: "de" | "vi" }>;
 }) {
-  const { locale } = params;
+  const { locale } = use(params);
 
   return (
     <section className="space-y-4">
