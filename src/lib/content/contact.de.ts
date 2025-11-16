@@ -15,9 +15,10 @@ export const contactDe = {
     title: 'Besuchszeiten',
     text: 'Sie können uns zu folgenden Zeiten besuchen:',
     times: [
-      'Montag - Freitag: 09:00 - 17:00 Uhr',
-      'Samstag: Nach Vereinbarung',
-      'Sonntag: Nach den Heiligen Messen',
+      // 'Montag - Freitag: 09:00 - 17:00 Uhr',
+      // 'Samstag: Nach Vereinbarung',
+      // 'Sonntag: Nach den Heiligen Messen',
+      'Montag - Sonntag: Nach Vereinbarung',
     ],
   },
   note: 'Für Gebetsanliegen oder persönliche Gespräche vereinbaren Sie bitte einen Termin.',

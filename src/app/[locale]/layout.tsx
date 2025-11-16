@@ -41,11 +41,11 @@ export default function LocaleLayout({
                 {locale === 'de' ? 'Kontakt' : 'Liên hệ'}
               </h3>
               <address className="text-sm not-italic leading-relaxed">
-                Musterstraße 123<br />
-                12345 Musterstadt<br />
+                Mackestraße 43<br />
+                53119 Bonn<br />
                 {locale === 'de' ? 'Deutschland' : 'Đức'}<br />
-                <a href="tel:+49123456789" className="hover:text-white transition-colors">+49 123 456789</a><br />
-                <a href="mailto:info@ordensgemeinschaft.de" className="hover:text-white transition-colors">info@ordensgemeinschaft.de</a>
+                <a href="tel:+491621975460" className="hover:text-white transition-colors">+49 162 1975460</a><br />
+                <a href="mailto:sr.caecilia@web.de" className="hover:text-white transition-colors">sr.caecilia@web.de</a>
               </address>
             </div>
             <div>
@@ -53,12 +53,12 @@ export default function LocaleLayout({
                 {locale === 'de' ? 'Öffnungszeiten' : 'Giờ mở cửa'}
               </h3>
               <p className="text-sm leading-relaxed">
-                {locale === 'de' 
+                {/* {locale === 'de' 
                   ? 'Montag - Freitag: 09:00 - 17:00 Uhr' 
-                  : 'Thứ Hai - Thứ Sáu: 09:00 - 17:00'}<br />
+                  : 'Thứ Hai - Thứ Sáu: 09:00 - 17:00'}<br /> */}
                 {locale === 'de'
-                  ? 'Samstag & Sonntag: Nach Vereinbarung'
-                  : 'Thứ Bảy & Chủ Nhật: Theo lịch hẹn'}
+                  ? 'Montag - Sonntag: Nach Vereinbarung'
+                  : 'Thứ Hai - Thứ Bảy: Theo lịch hẹn'}
               </p>
             </div>
           </div>
