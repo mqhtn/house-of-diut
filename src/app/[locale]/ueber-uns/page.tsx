@@ -30,17 +30,32 @@ export default function AboutPage({
             <div className="w-16 h-16 mx-auto mb-6 text-stone-400 group-hover:text-stone-600 transition-colors">
               {index === 0 && (
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               )}
               {index === 1 && (
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" />
                 </svg>
               )}
               {index === 2 && (
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.553-.894L9 7.5m0 0l6.553-3.276A1 1 0 0117 5.618v10.764a1 1 0 01-1.447.894L9 12.5m0 0v6.5m0-6.5L2.553 7.724" />
+                </svg>
+              )}
+              {index === 3 && (
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+              {index === 4 && (
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+              )}
+              {index === 5 && (
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               )}
             </div>
@@ -62,11 +77,11 @@ export default function AboutPage({
       {/* Modal */}
       {openModal !== null && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 backdrop-blur-md bg-stone-900/20 z-50 flex items-center justify-center p-4 transition-all duration-300"
           onClick={() => setOpenModal(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl"
+            className="bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl transition-all duration-300 transform origin-center animate-in fade-in zoom-in-95"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="sticky top-0 bg-white border-b border-stone-200 p-6 flex justify-between items-center">
@@ -94,7 +109,7 @@ export default function AboutPage({
       )}
 
       {/* Werte-Sektion */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div className="p-8 bg-gradient-to-br from-stone-50 to-white rounded-xl shadow-sm border border-stone-100">
           <div className="w-16 h-16 mx-auto mb-6 text-stone-400">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +157,7 @@ export default function AboutPage({
               : 'Trong cộng đoàn, chúng tôi sống và cầu nguyện cùng nhau như một gia đình trong Chúa Kitô.'}
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Call-to-Action */}
       <div className="mt-16 p-8 bg-stone-800 text-white rounded-xl text-center">
