@@ -29,8 +29,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# images - hosted on CDN
-public/images/
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
