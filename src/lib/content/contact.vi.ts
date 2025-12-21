@@ -15,9 +15,10 @@ export const contactVi = {
     title: 'Giờ thăm viếng',
     text: 'Bạn có thể đến thăm chúng tôi vào các giờ sau:',
     times: [
-      'Thứ Hai - Thứ Sáu: 09:00 - 17:00',
-      'Thứ Bảy: Theo hẹn trước',
-      'Chủ Nhật: Sau các Thánh lễ',
+      // 'Thứ Hai - Thứ Sáu: 09:00 - 17:00',
+      // 'Thứ Bảy: Theo hẹn trước',
+      // 'Chủ Nhật: Sau các Thánh lễ',
+      'Thứ Hai - Chủ Nhật: Theo hẹn trước',
     ],
   },
   note: 'Vui lòng đặt lịch hẹn trước cho các ý cầu nguyện hoặc trao đổi cá nhân.',
