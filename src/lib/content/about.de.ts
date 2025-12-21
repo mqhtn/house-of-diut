@@ -19,7 +19,7 @@ export const aboutDe = {
       text: 'Die Spiritualität unserer Gemeinschaft wird durch das Kontemplative Gebet, die Verehrung der Eucharistie und die Meditation über die Heilige Schrift geprägt. Unser religiöses Leben ist tief verwurzelt in der Tradition unseres Ordens und gleichzeitig offen für die Bedürfnisse der heutigen Welt. Wir erleben täglich, wie Gottes Gnade in unserem gemeinschaftlichen Leben wirkt und uns befähigt, sein Licht in die Welt zu tragen.',
     },
     {
-      title: 'Diensten und Aufgabenfelder',
+      title: 'Dienste und Aufgabenfelder',
       text: 'Unsere Gemeinschaft widmet sich verschiedenen Diensten und Aufgaben. Dazu gehört die Verwaltung und die Betreuung unseres Klosters, pastorale Begleitung, sowie die Unterstützung bedürftiger Menschen. Wir engagieren uns auch in der Vermittlung zwischen Kulturen und Religionen. Durch diese vielfältigen Aufgaben bringen wir unsere Liebe zu Gott und zum Nächsten zum Ausdruck.',
     },
     {
