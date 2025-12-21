@@ -3,65 +3,71 @@ export const galleryDe = {
   subtitle: 'Einblicke in unser Ordensleben',
   categories: [
     {
-      title: 'Gebetsleben',
-      description: 'Momente der Stille und des Gebets',
+      title: 'Gemeinschaftsleben',
+      description: 'Zusammenleben und Freizeit in Gemeinschaft',
       images: [
         {
-          src: '/images/gallery/prayer-1.jpg',
-          alt: 'Bild1',
-          caption: 'Beschreibung'
+          src: '/images/gallery/community-1.png',
+          alt: 'Gruppenfoto der Schwestern in Deutschland',
+          caption: 'Unsere Gemeinschaft in Deutschland'
         },
         {
-          src: '/images/gallery/prayer-2.jpg',
-          alt: 'Bild2',
-          caption: 'Beschreibung'
+          src: '/images/gallery/community-2.png',
+          alt: 'Schwestern bei Freizeitaktivität',
+          caption: 'Gemeinsam unterwegs - Fahrradfahren macht Freude'
         },
         {
-          src: '/images/gallery/prayer-3.jpg',
-          alt: 'Bild3',
-          caption: 'Beschreibung'
+          src: '/images/gallery/community-3.png',
+          alt: 'Großes Gruppenfoto mit Kandidaten, Postulanten und Novizen',
+          caption: 'Unsere Ordensfamilie - Kandidaten, Postulanten und Novizen'
+        },
+        {
+          src: '/images/gallery/community-4.png',
+          alt: 'Gruppenfoto der Gemeinschaft',
+          caption: 'Gemeinsam in Glaube und Hoffnung'
         }
       ]
     },
     {
-      title: 'Gemeinschaftsleben',
-      description: 'Zusammenleben in Gemeinschaft',
+      title: 'Gebetsleben',
+      description: 'Momente der Stille und des Gebets',
       images: [
         {
-          src: '/images/gallery/community-1.jpg',
-          alt: 'Bild4',
-          caption: 'Beschreibung'
+          src: '/images/gallery/prayer-1.png',
+          alt: 'Schwestern im Gebet',
+          caption: 'Im Gebet vereint - Das Kreuz unsere Hoffnung'
+        }
+      ]
+    },
+    {
+      title: 'Unsere Dienste',
+      description: 'Mit Herz für die Menschen - Dienste in Deutschland und Vietnam',
+      images: [
+        {
+          src: '/images/gallery/service-1.png',
+          alt: 'Dienste: Gesundheit und Handwerk',
+          caption: 'Hilfe beim Blutdruckmessen und das traditionelle Ao Dai nähen'
         },
         {
-          src: '/images/gallery/community-2.jpg',
-          alt: 'Bild5',
-          caption: 'Beschreibung'
+          src: '/images/gallery/service-2.png',
+          alt: 'Schwester mit Kindern in Vietnam',
+          caption: 'Begleitung und Fürsorge für die Kinder in Vietnam'
         },
         {
-          src: '/images/gallery/community-3.jpg',
-          alt: 'Bild6',
-          caption: 'Beschreibung'
+          src: '/images/gallery/service-3.png',
+          alt: 'Hilfsbedürftige mit Essen versorgen',
+          caption: 'Mit offenen Herzen für die Bedürftigen da sein'
         }
       ]
     },
     {
       title: 'Feste und Feiern',
-      description: 'Besondere Momente im Kirchenjahr',
+      description: 'Besondere Momente gemeinsam erleben',
       images: [
         {
-          src: '/images/gallery/celebrations-1.jpg',
-          alt: 'Bild7',
-          caption: 'Beschreibung'
-        },
-        {
-          src: '/images/gallery/celebrations-2.jpg',
-          alt: 'Bild8',
-          caption: 'Beschreibung'
-        },
-        {
-          src: '/images/gallery/celebrations-3.jpg',
-          alt: 'Bild9',
-          caption: 'Beschreibung'
+          src: '/images/gallery/celebration-1.png',
+          alt: 'Gemeinschaftliche Feiern',
+          caption: 'Chor, Zeit mit Kindern und gemeinsames Schenken'
         }
       ]
     }
