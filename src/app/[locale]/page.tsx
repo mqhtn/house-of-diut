@@ -1,4 +1,5 @@
 import { use } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function HomePage({
@@ -22,16 +23,16 @@ export default function HomePage({
           </p>
         </div>
         
-        <div className="relative w-full max-w-sm mx-auto animate-slideUp">
+        <Link href={`/${locale}/ueber-uns`} className="block relative w-full max-w-sm mx-auto animate-slideUp group cursor-pointer">
           <Image
             src="/images/world-locations.png"
             alt={locale === "de" ? "Unsere Standorte weltweit" : "Các địa điểm của chúng tôi trên toàn thế giới"}
             width={384}
             height={192}
-            className="w-full h-auto drop-shadow-md hover:drop-shadow-lg transition-shadow duration-300"
+            className="w-full h-auto drop-shadow-md group-hover:drop-shadow-lg transition-all duration-300 group-hover:scale-102"
             priority
           />
-        </div>
+        </Link>
 
         <div className="grid grid-cols-2 gap-8 max-w-2xl mx-auto text-center py-8">
           <div className="p-6 bg-gradient-to-br from-stone-50 to-stone-100 rounded-lg shadow-sm">

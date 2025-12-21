@@ -21,23 +21,23 @@ export const eventsDe = {
     ]
   },
   regularEvents: {
-    title: 'Regelmäßige Heilige Messen',
+    title: 'Regelmäßige Veranstaltungen',
     events: [
-      {
-        title: 'Heilige Messe',
-        time: 'Sonntags um 09:30 Uhr',
-        description: 'Gemeinsame Eucharistiefeier in der Kirche St. Hedwig',
-      },
-      {
-        title: 'Vesper',
-        time: 'Täglich um 18:00 Uhr',
-        description: 'Abendgebet der Gemeinschaft',
-      },
-      {
-        title: 'Anbetung',
-        time: 'Freitags 15:00 - 16:00 Uhr',
-        description: 'Stille Anbetung in der Kapelle',
-      },
+      // {
+      //   title: 'Heilige Messe',
+      //   time: 'Sonntags um 09:30 Uhr',
+      //   description: 'Gemeinsame Eucharistiefeier in der Kirche St. Hedwig',
+      // },
+      // {
+      //   title: 'Vesper',
+      //   time: 'Täglich um 18:00 Uhr',
+      //   description: 'Abendgebet der Gemeinschaft',
+      // },
+      // {
+      //   title: 'Anbetung',
+      //   time: 'Freitags 15:00 - 16:00 Uhr',
+      //   description: 'Stille Anbetung in der Kapelle',
+      // },
     ],
   },
   specialEvents: {
