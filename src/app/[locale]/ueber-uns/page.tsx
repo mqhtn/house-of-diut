@@ -77,11 +77,11 @@ export default function AboutPage({
       {/* Modal */}
       {openModal !== null && (
         <div
-          className="fixed inset-0 backdrop-blur-md bg-stone-900/20 z-50 flex items-center justify-center p-4 transition-all duration-300"
+          className="fixed inset-0 backdrop-blur-md bg-stone-900/20 z-50 flex items-center justify-center p-4 opacity-0 animate-[fadeIn_0.3s_ease-in-out_forwards]"
           onClick={() => setOpenModal(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl transition-all duration-300 transform origin-center animate-in fade-in zoom-in-95"
+            className="bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl transform origin-center scale-95 opacity-0 animate-[zoomIn_0.3s_ease-in-out_forwards]"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="sticky top-0 bg-white border-b border-stone-200 p-6 flex justify-between items-center">
