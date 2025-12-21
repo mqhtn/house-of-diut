@@ -63,7 +63,7 @@ export default function AboutPage({
               {section.title}
             </h2>
             <p className="text-stone-600 text-center text-sm line-clamp-3">
-              {section.text}
+              {section.preview ? section.preview : section.text.split('\n').find(line => line.trim() && !line.includes('[IMAGE:') && !line.includes('[HÌNH ẢNH:') && !line.includes('**'))}
             </p>
             <div className="mt-6 text-center">
               <span className="text-stone-400 text-sm group-hover:text-stone-600 transition-colors">
