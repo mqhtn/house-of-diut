@@ -99,9 +99,92 @@ export default function AboutPage({
             </div>
             <div className="p-8">
               <div className="prose prose-stone max-w-none">
-                <p className="text-lg text-stone-700 leading-relaxed whitespace-pre-line">
-                  {content.content[openModal].text}
-                </p>
+                {(() => {
+                  const lines = content.content[openModal].text.split('\n');
+                  const elements = [];
+                  let i = 0;
+                  
+                  while (i < lines.length) {
+                    const line = lines[i];
+                    const imageMatch = line.match(/\[IMAGE:\s*(.+?)\]|\[HÌNH ẢNH:\s*(.+?)\]/);
+                    
+                    // Check if next line is also an image
+                    const nextLine = i + 1 < lines.length ? lines[i + 1] : null;
+                    const nextImageMatch = nextLine ? nextLine.match(/\[IMAGE:\s*(.+?)\]|\[HÌNH ẢNH:\s*(.+?)\]/) : null;
+                    
+                    if (imageMatch && nextImageMatch) {
+                      // Two images side by side
+                      const imageName1 = (imageMatch[1] || imageMatch[2]).trim();
+                      const imageName2 = (nextImageMatch[1] || nextImageMatch[2]).trim();
+                      
+                      elements.push(
+                        <div key={`side-by-side-${i}`} className="my-6 grid grid-cols-2 gap-4">
+                          <div className="text-center">
+                            <img
+                              src={`/images/about/${imageName1}.png`}
+                              alt={imageName1}
+                              className="max-w-full h-auto rounded-lg shadow-md inline-block"
+                              onError={(e) => {
+                                e.currentTarget.src = `/images/about/${imageName1}.jpg`;
+                                e.currentTarget.onerror = () => {
+                                  e.currentTarget.style.display = 'none';
+                                };
+                              }}
+                            />
+                          </div>
+                          <div className="text-center">
+                            <img
+                              src={`/images/about/${imageName2}.png`}
+                              alt={imageName2}
+                              className="max-w-full h-auto rounded-lg shadow-md inline-block"
+                              onError={(e) => {
+                                e.currentTarget.src = `/images/about/${imageName2}.jpg`;
+                                e.currentTarget.onerror = () => {
+                                  e.currentTarget.style.display = 'none';
+                                };
+                              }}
+                            />
+                          </div>
+                        </div>
+                      );
+                      i += 2;
+                    } else if (imageMatch) {
+                      // Single image
+                      const imageName = (imageMatch[1] || imageMatch[2]).trim();
+                      elements.push(
+                        <div key={`image-${i}`} className="my-6 text-center">
+                          <img
+                            src={`/images/about/${imageName}.png`}
+                            alt={imageName}
+                            className="max-w-full h-auto rounded-lg shadow-md inline-block"
+                            onError={(e) => {
+                              e.currentTarget.src = `/images/about/${imageName}.jpg`;
+                              e.currentTarget.onerror = () => {
+                                e.currentTarget.style.display = 'none';
+                              };
+                            }}
+                          />
+                        </div>
+                      );
+                      i++;
+                    } else if (line.trim()) {
+                      // Text with bold support
+                      const boldRegex = /\*\*(.+?)\*\*/g;
+                      const parts = line.split(boldRegex);
+                      elements.push(
+                        <p key={`text-${i}`} className="text-lg text-stone-700 leading-relaxed mb-4">
+                          {parts.map((part, partIdx) => 
+                            partIdx % 2 === 1 ? <strong key={partIdx}>{part}</strong> : part
+                          )}
+                        </p>
+                      );
+                      i++;
+                    } else {
+                      i++;
+                    }
+                  }
+                  return elements;
+                })()}
               </div>
             </div>
           </div>
