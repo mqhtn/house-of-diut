@@ -13,33 +13,37 @@ export default function Navigation({ locale }: { locale: ValidLocale }) {
   const newPathname = pathname.replace(`/${locale}`, '') || '/';
 
   return (
-    <header className="bg-white border-b border-stone-200">
-      <div className="max-w-7xl mx-auto px-6 py-3">
-        <div className="flex justify-end space-x-4 text-sm text-stone-600">
+    <header className="bg-white border-b border-stone-200/60 shadow-sm sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-2">
+        <div className="flex justify-end space-x-6 text-sm text-stone-600">
           <Link
             href={`/${otherLocale}${newPathname}`}
-            className="hover:text-stone-900 transition-colors"
+            className="hover:text-stone-900 transition-colors duration-200 font-medium"
           >
             {otherLocale === 'de' ? 'Deutsch' : 'Tiếng Việt'}
           </Link>
         </div>
       </div>
-      <nav className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <Link href={`/${locale}`} className="font-serif text-3xl text-stone-800 hover:text-stone-600 transition-colors">
+      <nav className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <Link href={`/${locale}`} className="font-serif text-3xl font-light text-stone-900 hover:text-stone-700 transition-colors duration-300">
           Ordensgemeinschaft
         </Link>
-        <div className="flex gap-8 items-center text-stone-600 font-medium">
-          <Link href={`/${locale}/ueber-uns`} className="hover:text-stone-900 transition-colors border-b-2 border-transparent hover:border-stone-900">
+        <div className="flex gap-10 items-center text-stone-700 font-medium">
+          <Link href={`/${locale}/ueber-uns`} className="relative group transition-colors duration-200 hover:text-stone-900">
             {locale === 'de' ? 'Über uns' : 'Về chúng tôi'}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href={`/${locale}/veranstaltungen`} className="hover:text-stone-900 transition-colors border-b-2 border-transparent hover:border-stone-900">
+          <Link href={`/${locale}/veranstaltungen`} className="relative group transition-colors duration-200 hover:text-stone-900">
             {locale === 'de' ? 'Veranstaltungen' : 'Sự kiện'}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href={`/${locale}/galerie`} className="hover:text-stone-900 transition-colors border-b-2 border-transparent hover:border-stone-900">
+          <Link href={`/${locale}/galerie`} className="relative group transition-colors duration-200 hover:text-stone-900">
             {locale === 'de' ? 'Galerie' : 'Thư viện ảnh'}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href={`/${locale}/kontakt`} className="hover:text-stone-900 transition-colors border-b-2 border-transparent hover:border-stone-900">
+          <Link href={`/${locale}/kontakt`} className="relative group transition-colors duration-200 hover:text-stone-900">
             {locale === 'de' ? 'Kontakt' : 'Liên hệ'}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </div>
       </nav>
