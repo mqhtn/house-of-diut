@@ -23,21 +23,21 @@ export const eventsVi = {
   regularEvents: {
     title: 'Lễ thường xuyên',
     events: [
-      // {
-      //   title: 'Thánh Lễ',
-      //   time: 'Chủ nhật lúc 09:30',
-      //   description: 'Thánh lễ chung tại nhà thờ St. Hedwig',
-      // },
-      // {
-      //   title: 'Kinh chiều',
-      //   time: 'Hàng ngày lúc 18:00',
-      //   description: 'Kinh nguyện buổi tối của cộng đoàn',
-      // },
-      // {
-      //   title: 'Chầu Thánh Thể',
-      //   time: 'Thứ Sáu 15:00 - 16:00',
-      //   description: 'Giờ chầu thinh lặng trong nhà nguyện',
-      // },
+      {
+        title: 'Thánh Lễ',
+        time: 'Chủ nhật lúc 09:30',
+        description: 'Thánh lễ chung tại nhà thờ St. Hedwig',
+      },
+      {
+        title: 'Kinh chiều',
+        time: 'Hàng ngày lúc 18:00',
+        description: 'Kinh nguyện buổi tối của cộng đoàn',
+      },
+      {
+        title: 'Chầu Thánh Thể',
+        time: 'Thứ Sáu 15:00 - 16:00',
+        description: 'Giờ chầu thinh lặng trong nhà nguyện',
+      },
     ],
   },
   specialEvents: {
