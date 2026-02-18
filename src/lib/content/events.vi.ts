@@ -45,13 +45,13 @@ export const eventsVi = {
     note: 'Các sự kiện được cập nhật thường xuyên',
     pdfs: [
       {
-        title: 'Thư mời',
+        title: 'Thư mời - Hiep Hoi Tín Hữu MTG',
         description: 'Thư mời tham dự Hiệp Hội Tín Hữu MTG',
         file: '/events/einladung.pdf',
       },
       {
-        title: 'Đơn xin gia nhập',
-        description: 'Đơn đăng ký tham gia sự kiện',
+        title: 'Đơn xin gia nhập - HHTHMTGTT',
+        description: '',
         file: '/events/anmeldung.pdf',
       },
     ],

@@ -75,7 +75,7 @@ export default function EventsPage({
                       </svg>
                       {previewPdf === pdf.file
                         ? (locale === 'de' ? 'Schließen' : 'Đóng')
-                        : (locale === 'de' ? 'Vorschau' : 'Xem trước')}
+                        : (locale === 'de' ? 'Vollansicht' : 'Xem toàn bộ')}
                     </button>
                     <a
                       href={pdf.file}
@@ -89,6 +89,25 @@ export default function EventsPage({
                     </a>
                   </div>
                 </div>
+
+                {/* Kleine Vorschau immer sichtbar */}
+                <div className="border-t border-stone-100 relative overflow-hidden" style={{ height: '320px' }}>
+                  <iframe
+                    src={`${pdf.file}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                    className="w-full border-0"
+                    style={{ height: '600px', marginTop: '-10px', pointerEvents: 'none' }}
+                    title={pdf.title}
+                  />
+                  {/* Klickbereich über dem iframe */}
+                  <div
+                    className="absolute inset-0 cursor-pointer"
+                    onClick={() => setPreviewPdf(previewPdf === pdf.file ? null : pdf.file)}
+                  />
+                  {/* Gradient unten */}
+                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+                </div>
+
+                {/* Vollansicht ausgeklappt */}
                 {previewPdf === pdf.file && (
                   <div className="border-t border-stone-200">
                     <iframe
