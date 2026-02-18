@@ -43,5 +43,17 @@ export const eventsVi = {
   specialEvents: {
     title: 'Sự kiện đặc biệt',
     note: 'Các sự kiện được cập nhật thường xuyên',
+    pdfs: [
+      {
+        title: 'Thư mời',
+        description: 'Thư mời tham dự Hiệp Hội Tín Hữu MTG',
+        file: '/events/einladung.pdf',
+      },
+      {
+        title: 'Đơn xin gia nhập',
+        description: 'Đơn đăng ký tham gia sự kiện',
+        file: '/events/anmeldung.pdf',
+      },
+    ],
   },
 };

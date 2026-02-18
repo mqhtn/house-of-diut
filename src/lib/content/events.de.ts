@@ -43,5 +43,17 @@ export const eventsDe = {
   specialEvents: {
     title: 'Besondere Veranstaltungen',
     note: 'Aktuelle Termine werden regelmäßig aktualisiert',
+    pdfs: [
+      {
+        title: 'Einladung',
+        description: 'Einladung zum Hiep Hoi Tín Hữu MTG',
+        file: '/events/einladung.pdf',
+      },
+      {
+        title: 'Anmeldungsformular',
+        description: 'Formular zur Anmeldung für die Veranstaltung',
+        file: '/events/anmeldung.pdf',
+      },
+    ],
   },
 };
